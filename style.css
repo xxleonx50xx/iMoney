@@ -39,6 +39,8 @@ body{
     height: 140px;
     width: 100%;
     border-radius: 0 0 48px 48px;
+    animation-name: slidedown;
+    animation-duration: 1.5s;
 }
 .heading h1{
     font-size: var(--fs-ex);
@@ -50,6 +52,8 @@ body{
 }
 .general-balance{
     padding: var(--pd-section);
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 h2 {
     font-size: var(--fs-bg);
@@ -146,6 +150,8 @@ a{
     border-radius: 10px;
     box-shadow: var(--shadow);
     padding: 17px;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 .concepts h2{
     font-weight: 500;
@@ -178,6 +184,8 @@ a{
 .add-forms{
     margin-top: var(--mg-top);
     padding: 17px;
+    animation-name: fadein;
+    animation-duration: 1.5s;
 }
 .add-forms h2{
     text-align: center;
@@ -278,7 +286,36 @@ footer{
     bottom: 0;
     border-radius: 18px 18px 0 0px;
     height: 56px;
-
+    animation-name: slideup;
+    animation-duration: 1.5s;
+    
+}
+@keyframes slideup{
+    from {
+        transform:translateY(80px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}
+@keyframes slidedown{
+    from {
+        transform:translateY(-140px);
+    }
+    to{
+        transform:translateY(0px);
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0%;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(1);
+    }
+    
 }
 footer a:nth-child(2){
     background-color:var(--pure-gray);
