@@ -8,7 +8,99 @@
     <title>iMoney</title>
 </head>
 <body>
-    
+    <main class="container">
+        <section class="heading">
+            <h1>¡Que onda, Fernando!</h1>
+            <p>¿Cómo te fue hoy con Ad Center y las morritas campeón? 😎</p>
+        </section>
+        <section class="general-balance" id="general-balance">
+            <h2>Balance general</h2>
+            <div class="account">
+                <div class="account-icon income">
+                    <img src="./assets/dollar.svg" alt="">
+                </div>
+                <p class="account-name">Balance BBVA / HSBC</p>
+                <p class="account-money"><span>$</span>19,579</p>
+                <a href="#titulo-nuevo-ingreso" class="btn-primary">Nuevo</a>
+            </div>
+            <div class="account">
+                <div class="account-icon expenses">
+                    <img src="./assets/dollar.svg" alt="">
+                </div>
+                <p class="account-name">Gastos</p>
+                <p class="account-money"><span>$</span>2,249</p>
+                <a href="#titulo-nuevo-gasto" class="btn-primary">Nuevo</a>
+            </div>
+        </section>
+        <section class="concepts" id="concepts">
+            <h2>Hoy, 20 de diciembre</h2>
+            <div class="single-concept">
+                <div class="concept-left">
+                    <p>SATP industrias</p>
+                    <p>BBVA / HSBC</p>
+                </div>
+                <p class="concept-charge"><span>+ </span><span>$</span>5,800</p>
+            </div>
+            <div class="single-concept">
+                <div class="concept-left">
+                    <p>SEO</p>
+                    <p>BBVA / HSBC</p>
+                </div>
+                <p class="concept-charge"><span>+ </span><span>$</span>2,800</p>
+            </div>
+            <div class="single-concept">
+                <div class="concept-left">
+                    <p>Flores</p>
+                    <p>Gastos</p>
+                </div>
+                <p class="concept-charge"><span>- </span><span>$</span>1,200</p>
+            </div>
+        </section>
+        <section class="add-forms" id="add">
+            <div class="form">
+                <h2 id="titulo-nuevo-ingreso">Nuevo Ingreso</h2>
+                <div class="account-icon income">
+                    <img src="./assets/dollar.svg" alt="">
+                </div>
+                <div class="form-container">
+                    <h3>BBVA / HSBC</h3>
+                    <form action="">
+                        <label for="cantidad" >¿Cuánto ganaste?</label>
+                        <span class="currencyinput">$
+                         <input type="number" id="cantidad-ganada">
+                        </span>
+                        <label for="concepto" >Concepto</label>
+                        <input type="text" id="concepto-ganada" class="currencyinput">
+                        <button type="button" class="btn-primary">Añadir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="form">
+                <h2 id="titulo-nuevo-gasto">Nuevo Gasto</h2>
+                <div class="account-icon expenses">
+                    <img src="./assets/dollar.svg" alt="">
+                </div>
+                <div class="form-container">
+                    <h3>Gastos</h3>
+                    <form action="">
+                        <label for="cantidad" >¿De cuanto el chingazo?</label>
+                        <span class="currencyinput">$
+                            <input type="number" id="cantidad-gastada">
+                           </span>
+                        <label for="concepto" >Concepto</label>
+                        
+                        <input type="text" id="concepto-ganada" class="currencyinput">
+                        <button type="button" class="btn-primary">Añadir</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="#concepts"><img src="./assets/ep_menu.svg" alt=""></a>
+            <a href="#add"><img src="./assets/akar-icons_plus.svg" alt=""></a>
+            <a href="#general-balance"><img src="./assets/icons8_bank-card.svg" alt=""></a>
+        </footer>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
