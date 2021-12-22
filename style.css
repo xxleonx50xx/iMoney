@@ -55,11 +55,12 @@ body{
     animation-name: fadein;
     animation-duration: 1.5s;
 }
-h2 {
+h2, h2 span {
     font-size: var(--fs-bg);
     color: var(--white);
     font-weight: 500;
 }
+
 .account{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,7 +144,7 @@ a{
     color: var(--white);
 }
 .concepts{
-    min-height: 250px;
+    min-height: 50px;
     margin: var(--pd-section);
     background-color: var(--dark-gray);
     margin-top: var(--mg-top);

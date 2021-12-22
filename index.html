@@ -19,29 +19,26 @@
                 <div class="account-icon income">
                     <img src="./assets/dollar.svg" alt="">
                 </div>
+                <!-- CUENTA BBVA -->
                 <p class="account-name">Balance BBVA / HSBC</p>
-                <p class="account-money"><span>$</span>19,579</p>
+                <p class="account-money" id="totalIngresosP"><span>$</span>19,579</p>
                 <a href="#titulo-nuevo-ingreso" class="btn-primary">Nuevo</a>
             </div>
             <div class="account">
                 <div class="account-icon expenses">
                     <img src="./assets/dollar.svg" alt="">
                 </div>
+                <!-- GASTOS -->
                 <p class="account-name">Gastos</p>
-                <p class="account-money"><span>$</span>2,249</p>
+                <p class="account-money" id="totalGastosP"><span>$</span>2,249</p>
                 <a href="#titulo-nuevo-gasto" class="btn-primary">Nuevo</a>
             </div>
         </section>
         <section class="concepts" id="concepts">
-            <h2>Hoy, 20 de diciembre</h2>
-            <div class="single-concept">
-                <div class="concept-left">
-                    <p>SATP industrias</p>
-                    <p>BBVA / HSBC</p>
-                </div>
-                <p class="concept-charge"><span>+ </span><span>$</span>5,800</p>
-            </div>
-            <div class="single-concept">
+            <h2>Hoy, <span id="day-number"></span> de diciembre</h2>
+            <!-- Concepto de Ingresos y Gastos -->
+            
+            <!-- <div class="single-concept">
                 <div class="concept-left">
                     <p>SEO</p>
                     <p>BBVA / HSBC</p>
@@ -54,7 +51,7 @@
                     <p>Gastos</p>
                 </div>
                 <p class="concept-charge"><span>- </span><span>$</span>1,200</p>
-            </div>
+            </div> -->
         </section>
         <section class="add-forms" id="add">
             <div class="form">
@@ -63,34 +60,36 @@
                     <img src="./assets/dollar.svg" alt="">
                 </div>
                 <div class="form-container">
+                    <!-- FORMULARIO INGRESOS -->
                     <h3>BBVA / HSBC</h3>
-                    <form action="">
+                    <form action="" id="formularioIngresos">
                         <label for="cantidad" >¿Cuánto ganaste?</label>
                         <span class="currencyinput">$
                          <input type="number" id="cantidad-ganada">
                         </span>
                         <label for="concepto" >Concepto</label>
                         <input type="text" id="concepto-ganada" class="currencyinput">
-                        <button type="button" class="btn-primary">Añadir</button>
+                        <button type="button" class="btn-primary" onclick="sumarIngresos()">Añadir</button>
                     </form>
                 </div>
             </div>
             <div class="form">
+                <!-- FORMULARIOS GASTOS -->
                 <h2 id="titulo-nuevo-gasto">Nuevo Gasto</h2>
                 <div class="account-icon expenses">
                     <img src="./assets/dollar.svg" alt="">
                 </div>
                 <div class="form-container">
                     <h3>Gastos</h3>
-                    <form action="">
+                    <form action="" id="formularioGastos">
                         <label for="cantidad" >¿De cuanto el chingazo?</label>
                         <span class="currencyinput">$
                             <input type="number" id="cantidad-gastada">
                            </span>
                         <label for="concepto" >Concepto</label>
                         
-                        <input type="text" id="concepto-ganada" class="currencyinput">
-                        <button type="button" class="btn-primary">Añadir</button>
+                        <input type="text" id="concepto-gastado" class="currencyinput">
+                        <button type="button" class="btn-primary" onclick="sumarGastos()">Añadir</button>
                     </form>
                 </div>
             </div>
